@@ -272,6 +272,7 @@ const validateForm = (formItem) => {
 
 document.querySelector('#contact-form').addEventListener('submit', () => {
   let invalid = 0;
+  let e = null;
   for (let i = 0; i < e.target.length; i += 1) {
     if (!e.target[i].hasAttribute('disabled')) {
       if (e.target[i].classList.contains('form-control')) {
